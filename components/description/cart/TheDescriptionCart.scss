@@ -1,0 +1,18 @@
+.description-cart {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 100%;
+    cursor: pointer
+  }
+
+  &__counter {
+    margin-left: 1vw;
+    font-size: var(--font-mini-size);
+  }
+
+  &:hover {
+    color: var(--orange-price)
+  }
+}

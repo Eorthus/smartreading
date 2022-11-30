@@ -1,0 +1,110 @@
+.price {
+  position: fixed;
+  bottom: 3.5vw;
+  left: 50.5vw;
+  @media screen and (max-width: 600px) {
+    left: 3vw;
+    bottom: 6vw;
+  }
+
+  &_container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__buy {
+    background: var(--blue);
+    color: white;
+    width: 15.5vw;
+    height: 4.7vw;
+    font-size: 1.8vw;
+    border: none;
+    text-transform: uppercase;
+    margin-right: 0.5vw;
+    @media screen and (max-width: 600px) {
+      width: 40vw;
+      height: 12.5vw;
+      font-size: 5.5vw;
+      margin-right: 2.5vw;
+    }
+
+    &:hover {
+      background: var(--blue-hover);
+    }
+  }
+
+  &__time {
+    display: flex;
+    flex-direction: column;
+    margin-left: -0.5vw;
+    background: var(--yellow-price);
+    border-radius: 50%;
+    width: 5.5vw;
+    height: 5.5vw;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 600px) {
+      width: 14vw;
+      height: 14vw;
+      margin-left: -2.3vw;
+    }
+  }
+
+  &__number {
+    width: 15.5vw;
+    height: 4.7vw;
+    background: var(--orange-price);
+    font-size: 3.1vw;
+    text-transform: uppercase;
+    display: flex;
+    @media screen and (max-width: 600px) {
+      width: 40vw;
+      height: 12.5vw;
+      font-size: 6vw;
+    }
+
+    &_center {
+      margin: auto;
+      display: block;
+    }
+  }
+
+  &__percent {
+    color: var(--subfont);
+    font-size: 1vw;
+    @media screen and (max-width: 600px) {
+      font-size: 2.5vw;
+    }
+  }
+
+  &__timer {
+    font-size: 1.4vw;
+    @media screen and (max-width: 600px) {
+      font-size: 4vw;
+
+    }
+  }
+
+  &__old {
+    color: var(--subfont);
+    font-size: 1vw;
+    text-decoration: line-through;
+    @media screen and (max-width: 600px) {
+      font-size: 2.5vw;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    bottom: -7vw;
+    height: 22vw;
+    left: -3vw;
+    width: 100vw;
+    background: var(--primary);
+    z-index: -1;
+    display: none;
+    @media screen and (max-width: 600px) {
+      display: block;
+    }
+  }
+}

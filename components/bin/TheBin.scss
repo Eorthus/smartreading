@@ -1,0 +1,73 @@
+.bin {
+  &__container {
+    height: 100%;
+    position: relative;
+    color: var(--white);
+    padding: 15px;
+  }
+
+  &__cross {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: -74px;
+    top: 16px;
+    background-color: var(--gray);
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  &__line {
+    background: var(--white);
+    background: var(--white);
+    width: 20px;
+    height: 2px;
+    position: absolute;
+
+    &:first-child {
+      transform: rotate(45deg);
+    }
+
+    &:last-child {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__empty {
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+  }
+
+  &__title {
+    display: block;
+    padding: 5px 20px 20px;
+    font-size: 23px;
+  }
+
+  &__btn {
+    color: rgb(255, 255, 255);
+    border-color: rgba(255, 255, 255, 0.45);
+    background: transparent;
+    width: 100%;
+    margin-top: 20px;
+    justify-content: center;
+    height: 50px;
+    vertical-align: center;
+    position: relative;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 19px;
+    display: flex;
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+  }
+}

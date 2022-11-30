@@ -1,0 +1,31 @@
+.accordion-list {
+  width: 100%;
+
+  .accordion-item {
+    --content-height: 2vw;
+    height: calc(var(--summary-height));
+    overflow: hidden;
+    transition: height 300ms ease-in-out;
+
+    > .accordion-item__summary {
+      cursor: pointer;
+      transition: color 300ms ease-in-out;
+      list-style: none;
+
+      &:hover {
+        transition: color 300ms ease-in-out;
+      }
+    }
+
+    &--open {
+         height: calc(var(--summary-height) + var(--content-height) + 1vw);
+      @media screen and (max-width: 550px){
+        height: calc(var(--summary-height) + var(--content-height) + 3vw);
+      }
+    }
+
+    > .accordion-item__content {
+      border-top: none;
+    }
+  }
+}

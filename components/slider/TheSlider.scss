@@ -1,0 +1,55 @@
+.slider {
+  &__container {
+    width: 78vw;
+    margin: auto;
+    padding-top: 4.5vw;
+    padding-bottom: 8vw;
+    position: relative;
+  }
+
+  &__title {
+    font-size: var(--font-size);
+    display: block;
+    text-align: center;
+    white-space: pre-line;
+    position: absolute;
+    left: 0 !important;
+    right: 0 !important;
+    margin: auto !important;
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__text {
+    width: 50%;
+    padding-top: 9vw;
+  }
+
+  &__img {
+    width: 50%;
+    position: absolute;
+    margin-top: 9vw;
+    right: 0;
+
+    img {
+      width: 105%;
+    }
+  }
+}
+
+.slider-animation {
+  &__title {
+    .pin-spacer {
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__img {
+    width: 50%;
+  }
+}

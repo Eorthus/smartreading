@@ -1,0 +1,22 @@
+body{
+  background: var(--primary);
+  font-family: Inter;
+  font-weight: 400;
+  color:var(--font);
+  line-height: 1.3;
+  margin:0;
+  padding:0
+}
+.content{
+  margin:auto;
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}

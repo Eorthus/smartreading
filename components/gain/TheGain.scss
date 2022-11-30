@@ -1,0 +1,36 @@
+.gain {
+  color: var(--white);
+  background: var(--secondary);
+
+  &_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__h {
+    font-size: var(--font-size);
+    @media screen and (max-width: 600px) {
+      font-size: 5.5vw;
+    }
+  }
+
+  &__preferences {
+    display: flex;
+    padding-top: 1vw;
+    padding-bottom: 2.5vw;
+    width: 55vw;
+    justify-content: space-between;
+    @media screen and (max-width: 600px) {
+      padding-top: 5vw;
+      width: 85vw;
+      padding-bottom: 9vw;
+    }
+  }
+
+  &__slider {
+    width: 100%;
+    position: relative;
+  }
+}

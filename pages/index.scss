@@ -1,0 +1,42 @@
+.description {
+  display: flex;
+  padding: 0 4vw 4vw 7vw;
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+}
+
+.gain {
+  padding-top: 4.5vw;
+  padding-bottom: 4.5vw;
+  @media screen and (max-width: 600px) {
+    padding-top: 9vw;
+    padding-bottom: 9vw;
+  }
+}
+
+.books {
+  padding-top: 4vw;
+  padding-bottom: 3vw;
+  @media screen and (max-width: 600px) {
+    padding-top: 9vw;
+    padding-bottom: 9vw;
+  }
+}
+
+.slider, .mobslider {
+  background: var(--secondary);
+  color: var(--white)
+}
+
+.bin {
+  position: fixed;
+  top: 0;
+  background: black;
+  height: 100vh;
+  width: 240px;
+  right: -240px;
+  z-index: 1;
+}

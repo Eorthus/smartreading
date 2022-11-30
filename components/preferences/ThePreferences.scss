@@ -1,0 +1,87 @@
+.preference {
+  &_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.preference-item {
+  padding: 3.5vw;
+  font-size: var(--font-size);
+  width: 65%;
+  @media screen and (max-width: 600px) {
+    padding: 5vw;
+    font-size: 4vw;
+  }
+
+  &_container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__img {
+    width: 4vw;
+    object-fit: contain;
+    @media screen and (max-width: 600px) {
+      width: 5.5vw;
+    }
+  }
+
+  &__text {
+    margin-left: 5%;
+    display: block;
+    white-space: pre-line;
+  }
+}
+
+.preference-item:first-child {
+  background: var(--green);
+  width: 58%;
+  position: absolute;
+  bottom: 0;
+  left: 18%;
+  @media screen and (max-width: 600px) {
+    width: 88%;
+    left: 0px;
+  }
+}
+
+.preference-item:nth-child(2) {
+  background: var(--orange-price);
+  margin-left: -8%;
+  width: 58%;
+  @media screen and (max-width: 600px) {
+    width: 80%;
+    margin-left: 10%;
+  }
+}
+
+.preference-item:nth-child(3) {
+  background: var(--yellow);
+  margin-left: -18%;
+  width: 55%;
+  @media screen and (max-width: 600px) {
+    margin-left: -10%;
+    width: 80%;
+  }
+}
+
+.preference-item:nth-child(4) {
+  background: var(--light-blue);
+  width: 60%;
+  @media screen and (max-width: 600px) {
+    margin-left: -3%;
+    width: 80%;
+  }
+}
+
+.animate-preference {
+  height: 38vw;
+  width: 100%;
+  position: relative;
+
+  &_container {
+
+  }
+}

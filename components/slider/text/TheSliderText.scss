@@ -1,0 +1,24 @@
+.slider-text {
+  padding-right: 2vw;
+  white-space: pre-line;
+  height: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &:last-child {
+    height: 43vw;
+    justify-content: flex-end;
+  }
+
+  &__title {
+    display: block;
+    font-size: 4.8vw;
+  }
+
+  &__subtitle {
+    font-size: var(--font-mini-size);
+    color: var(--pink);
+    margin-top: 1vw;
+  }
+}

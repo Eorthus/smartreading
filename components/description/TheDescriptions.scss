@@ -1,0 +1,58 @@
+.description {
+  &__book {
+    width: 40vw;
+    margin-right: 3vw;
+    position: relative;
+    padding-top: 4vw;
+    @media screen and (max-width: 600px) {
+      width: 95vw;
+    }
+  }
+
+  &__about {
+    width: 32vw;
+    font-size: var(--font-size);
+    margin-top: 0.5vw;
+    font-weight: 500;
+    padding-top: 4vw;
+    @media screen and (max-width: 600px) {
+      width: 75vw;
+      display: flex;
+      flex-direction: column-reverse;
+      margin: auto;
+      padding-top: 6vw;
+      padding-bottom: 4vw;
+    }
+  }
+
+  &__logo {
+    width: 5.1vw;
+    padding-top: 1vw;
+    padding-left: 2vw;
+    padding-right: 2.4vw;
+    @media screen and (max-width: 600px) {
+      position: absolute;
+      top: 0;
+      width: 11vw;
+      right: 19vw;
+      top: 5.2vw;
+    }
+  }
+
+  &__logo img {
+    width: 100%;
+  }
+
+  &__cart {
+    width: 2.1vw;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 2.5vw;
+    @media screen and (max-width: 600px) {
+      position: absolute;
+      width: 6.5vw;
+      right: 9vw;
+      top: 6.5vw;
+    }
+  }
+}

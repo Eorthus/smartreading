@@ -1,0 +1,23 @@
+.description-about {
+  @media screen and (max-width: 600px) {
+    line-height: 1.5;
+    margin-top: 6.8vw;
+  }
+
+  &__text {
+    display: block;
+    @media screen and (max-width: 600px) {
+      font-size: 4.5vw;
+    }
+
+    &:first-child {
+      margin-bottom: 3.5vw;
+    }
+
+    &:last-child {
+      @media screen and (max-width: 600px) {
+        font-size: 3.8vw;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.feedback {
+  &__container {
+    width: 95vw;
+    margin: auto;
+    padding-top: 5vw;
+    @media screen and (max-width: 600px) {
+      padding-top: 9vw;
+      padding-bottom: 9vw;
+    }
+  }
+
+  &__title {
+    font-size: var(--font-size);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3vw;
+    @media screen and (max-width: 600px) {
+      font-size: 5.5vw;
+      width: 70vw;
+      text-align: center;
+      margin: auto auto 4vw;
+    }
+  }
+
+  &__messages {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+  }
+
+  &_br {
+    padding-top: 8vw;
+    display: flex;
+    padding-left: 10vw;
+    padding-bottom: 12vw;
+    height: 18vw;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      padding: 0 6vw 6vw;
+    }
+  }
+
+  &__faq {
+    width: 50%;
+    padding-right: 2vw;
+    box-sizing: border-box;
+    position: relative;
+    @media screen and (max-width: 600px) {
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+
+  &__contact {
+    width: 42%;
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
+  }
+}

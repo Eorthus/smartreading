@@ -1,0 +1,30 @@
+.description-book {
+  &__img img {
+    width: 100%;
+    opacity: 0.98;
+  }
+
+  &__flag {
+    position: absolute;
+    background: var(--orange);
+    width: 22%;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 1.7vw;
+    height: 8%;
+    display: flex;
+    top: 1.8%;
+    right: 20%;
+    z-index: -1;
+    @media screen and (max-width: 600px) {
+      top: -1%;
+      z-index: 0;
+      font-size: 4.8vw;
+      height: 7%;
+    }
+  }
+
+  &_span {
+    margin: auto;
+  }
+}

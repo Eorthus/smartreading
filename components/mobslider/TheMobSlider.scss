@@ -1,0 +1,53 @@
+.mobslider {
+  &__container {
+    margin: auto;
+    position: relative;
+    padding-top: 9vw;
+    padding-bottom: 9vw;
+    width: 85vw;
+  }
+
+  &__title {
+    display: block;
+    text-align: center;
+    white-space: pre-line;
+    margin: auto !important;
+    position: unset;
+    font-size: 5.5vw;
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__text {
+    padding-top: 9vw;
+    width: 40%;
+  }
+
+  &__img {
+    position: absolute;
+    margin-top: 9vw;
+    right: 0;
+    width: 60%;
+
+    img {
+      width: 105%;
+    }
+  }
+}
+
+.mobslider-animation {
+  &__subtitle {
+    .pin-spacer {
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__img {
+    width: 60%;
+  }
+}

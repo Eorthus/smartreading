@@ -1,0 +1,43 @@
+.description-rating {
+  display: flex;
+  align-items: center;
+  margin-top: 3.5vw;
+  color: var(--orange);
+
+  &__img {
+    width: 50%;
+    position: relative;
+    height: 3vw;
+    @media screen and (max-width: 600px) {
+      width: 35%;
+      height: 5vw;
+    }
+  }
+
+  &__number {
+    font-size: 1.8vw;
+    color: var(--subfont);
+    font-weight: 500;
+    margin-left: 0.5vw;
+    @media screen and (max-width: 600px) {
+      font-size: 4.5vw;
+      margin-left: 1vw;
+    }
+  }
+
+  &__empty {
+    background-size: contain;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__full {
+    background-size: contain;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+  }
+}

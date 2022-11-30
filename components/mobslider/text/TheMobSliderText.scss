@@ -1,0 +1,41 @@
+.slider-text {
+  padding-right: 2vw;
+  white-space: pre-line;
+  height: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @media screen and (max-width: 550px) {
+    height: unset;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    white-space: unset;
+  }
+
+  &:last-child {
+    height: 43vw;
+    justify-content: flex-end;
+    @media screen and (max-width: 550px) {
+      height: unset;
+    }
+  }
+
+  &__title {
+    display: block;
+    font-size: 4.8vw;
+    @media screen and (max-width: 550px) {
+      font-size: 4vw;
+    }
+  }
+
+  &__subtitle {
+    font-size: var(--font-mini-size);
+    color: var(--pink);
+    margin-top: 1vw;
+    @media screen and (max-width: 550px) {
+      font-size: 4vw;
+      margin-top: 5vw;
+      opacity: 0;
+    }
+  }
+}
